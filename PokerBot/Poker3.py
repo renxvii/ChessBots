@@ -509,7 +509,7 @@ def find_winners ():
     winners(players, table_cards)
     for _ in range(len(wins) - 1):
         for i in wins:
-            c = compare(wins[0],i,tb)
+            c = compare(wins[0],i,table_cards)
             if c == 2:
                 wins.remove(i)
                 wins[0] = i
