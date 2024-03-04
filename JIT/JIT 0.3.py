@@ -391,8 +391,8 @@ def render(i):
 def print_pos(pos):
     white = []
     black = []
-    whiteynames = []
-    niBBanames = []
+    whitenames = []
+    blacknames = []
     deadwhite = []
     deadblack = []
     originalwhite = [1,1,1,1,1,1,1,1,2,2,3,3,4,4,5,6]
@@ -427,30 +427,30 @@ def print_pos(pos):
             originalblack.remove(k)
     for w in white:
         if w == 1:
-            whiteynames.append('P')
+            whitenames.append('P')
         if w == 2:
-            whiteynames.append('N')
+            whitenames.append('N')
         if w == 3:
-            whiteynames.append('B')
+            whitenames.append('B')
         if w == 4:
-            whiteynames.append('R')
+            whitenames.append('R')
         if w == 5:
-            whiteynames.append('Q')
+            whitenames.append('Q')
         if w == 6:
-            whiteynames.append('K')
+            whitenames.append('K')
     for n in black:
         if n == 1:
-            niBBanames.append('P')
+            blacknames.append('P')
         if n == 2:
-            niBBanames.append('N')
+            blacknames.append('N')
         if n == 3:
-            niBBanames.append('B')
+            blacknames.append('B')
         if n == 4:
-            niBBanames.append('R')
+            blacknames.append('R')
         if n == 5:
-            niBBanames.append('Q')
+            blacknames.append('Q')
         if n == 6:
-            niBBanames.append('K')
+            blacknames.append('K')
     for w in originalwhite:
         if w == 1:
             deadwhite.append('P')
@@ -509,12 +509,12 @@ def print_pos(pos):
             a = sys.stdout.shell.write('    Remaining Material', 'console')
         if x == 3:
             a = sys.stdout.shell.write('    ')
-            for nn in niBBanames:
+            for nn in blacknames:
                 a = sys.stdout.shell.write(' ')
                 a=sys.stdout.shell.write(nn, 'console')
         if x == 4:
             a = sys.stdout.shell.write('    ')
-            for ww in whiteynames:
+            for ww in whitenames:
                 a = sys.stdout.shell.write(' ')
                 a=sys.stdout.shell.write(ww, 'KEYWORD')
         if x == 5:
@@ -533,8 +533,8 @@ def print_pos(pos):
 def print_pos2(pos):
     white = []
     black = []
-    whiteynames = []
-    niBBanames = []
+    whitenames = []
+    blacknames = []
     deadwhite = []
     deadblack = []
     originalwhite = [1,1,1,1,1,1,1,1,2,2,3,3,4,4,5,6]
@@ -569,30 +569,30 @@ def print_pos2(pos):
             originalblack.remove(k)
     for w in white:
         if w == 1:
-            whiteynames.append('P')
+            whitenames.append('P')
         if w == 2:
-            whiteynames.append('N')
+            whitenames.append('N')
         if w == 3:
-            whiteynames.append('B')
+            whitenames.append('B')
         if w == 4:
-            whiteynames.append('R')
+            whitenames.append('R')
         if w == 5:
-            whiteynames.append('Q')
+            whitenames.append('Q')
         if w == 6:
-            whiteynames.append('K')
+            whitenames.append('K')
     for n in black:
         if n == 1:
-            niBBanames.append('P')
+            blacknames.append('P')
         if n == 2:
-            niBBanames.append('N')
+            blacknames.append('N')
         if n == 3:
-            niBBanames.append('B')
+            blacknames.append('B')
         if n == 4:
-            niBBanames.append('R')
+            blacknames.append('R')
         if n == 5:
-            niBBanames.append('Q')
+            blacknames.append('Q')
         if n == 6:
-            niBBanames.append('K')
+            blacknames.append('K')
     for w in originalwhite:
         if w == 1:
             deadwhite.append('P')
@@ -651,12 +651,12 @@ def print_pos2(pos):
             a = sys.stdout.shell.write('    Remaining Material', 'console')
         if x == 4:
             a = sys.stdout.shell.write('    ')
-            for nn in niBBanames:
+            for nn in blacknames:
                 a = sys.stdout.shell.write(' ')
                 a=sys.stdout.shell.write(nn, 'console')
         if x == 3:
             a = sys.stdout.shell.write('    ')
-            for ww in whiteynames:
+            for ww in whitenames:
                 a = sys.stdout.shell.write(' ')
                 a=sys.stdout.shell.write(ww, 'KEYWORD')
         if x == 2:
